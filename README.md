@@ -1,9 +1,9 @@
 
 # SilverBullet plug template
 
-Uses the [Chrono]() library to parse natural language into date links, useful when you keep a journal.
+Uses the [Chrono](https://www.npmjs.com/package/chrono-node) library to parse natural language into date links, useful when you keep a journal.
 
-
+Entirely inspired by [nldates-obsidian](https://github.com/argenos/nldates-obsidian), though without the nice features like autocomplete and inline aliassing.
 
 ## Build
 To build this plug, make sure you have [SilverBullet installed](https://silverbullet.md/Install). Then, build the plug with:
