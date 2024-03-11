@@ -7,7 +7,7 @@ Entirely inspired by [nldates-obsidian](https://github.com/argenos/nldates-obsid
 
 ## Usage
 
-Trigger the command palate and run `parse date`
+Trigger the command palette and run `parse date`
 ![plug showcase](silverbullet-nldates-demo.gif)
 
 ## Build
