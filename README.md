@@ -1,7 +1,9 @@
 
 # SilverBullet plug template
 
-Insert your plug description here
+Uses the [Chrono]() library to parse natural language into date links, useful when you keep a journal.
+
+
 
 ## Build
 To build this plug, make sure you have [SilverBullet installed](https://silverbullet.md/Install). Then, build the plug with:
@@ -28,7 +30,7 @@ SilverBullet will automatically sync and load the new version of the plug (or sp
 If you would like to install this plug straight from Github, make sure you have the `.js` file committed to the repo and simply add
 
 ```
-- github:user/plugname/plugname.plug.js
+- github:montarion/silverbullet-nldates/nldates.plug.js
 ```
 
 to your `PLUGS` file, run `Plugs: Update` command and off you go!
