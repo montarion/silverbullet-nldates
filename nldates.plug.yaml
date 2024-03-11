@@ -1,0 +1,6 @@
+name: nldates
+functions:
+  parseDate:
+    path: nldates.ts:parseDate
+    command:
+      name: "parse date"
