@@ -5,6 +5,11 @@ Uses the [Chrono](https://www.npmjs.com/package/chrono-node) library to parse na
 
 Entirely inspired by [nldates-obsidian](https://github.com/argenos/nldates-obsidian), though without the nice features like autocomplete and inline aliassing.
 
+## Usage
+
+Trigger the command palate and run `parse date`
+![plug showcase](silverbullet-nldates-demo.gif)
+
 ## Build
 To build this plug, make sure you have [SilverBullet installed](https://silverbullet.md/Install). Then, build the plug with:
 
