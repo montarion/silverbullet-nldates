@@ -1,4 +1,3 @@
-import { editor } from "$sb/silverbullet-syscall/mod.ts";
 import { readSettings, writeSettings } from "$sb/lib/settings_page.ts";
 import * as chrono from 'chrono-node';
 
@@ -7,7 +6,7 @@ export async function parseDate(){
   let presettingsobj = await readSettings({nldates: {}})
   let settingsobj = presettingsobj["nldates"]
   if (Object.keys(settingsobj).length == 0) { // no settings obj
-    editor.flashNotification("Change prefix in SETTINGS")
+    await syscall("editor.flashNotification", "Change prefix in SETTINGS")
     let newobj = {nldates: {"dailyPrefix":""}}
     await writeSettings(newobj)
     settingsobj["dailyPrefix"] = ""
