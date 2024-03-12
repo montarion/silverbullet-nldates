@@ -2,7 +2,9 @@
   "importMap": "import_map.json",
   "tasks": {
     "build": "silverbullet plug:compile --importmap import_map.json *.plug.yaml",
-    "watch": "silverbullet plug:compile --importmap import_map.json *.plug.yaml -w"
+    "publish": "silverbullet plug:compile --importmap import_map.json *.plug.yaml && git add *.plug.js",
+    "test": "silverbullet plug:compile --importmap import_map.json *.plug.yaml && cp *.plug.js /home/$USER/notes/_plug/"
+    
   },
   "lint": {
     "rules": {
