@@ -4,3 +4,7 @@ functions:
     path: nldates.ts:parseDate
     command:
       name: "parse date"
+  parseDatecmd:
+    path: nldates.ts:parseDatecmd
+    command:
+      name: "parse date command"
