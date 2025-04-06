@@ -1,10 +1,10 @@
-import { readSetting, writeSetting } from "jsr:@silverbulletmd/silverbullet@^0.10.4//plug-api/lib/settings_page.ts";
+import { writeSetting } from "jsr:@silverbulletmd/silverbullet@^0.10.4//plug-api/lib/settings_page.ts";
 
 import * as chrono from 'npm:chrono-node';
 
 export async function parseDate(){
   // get prefix from settings
-  let presettingsobj = await readSettings({nldates: {}})
+  let presettingsobj = await system.getSpaceConfig("nldates")
   let settingsobj = presettingsobj["nldates"]
   if (Object.keys(settingsobj).length == 0) { // no settings obj
     await syscall("editor.flashNotification", "Change prefix in SETTINGS")
@@ -24,7 +24,7 @@ export async function parseDate(){
 
 export async function parseDatecmd(text){
   // get prefix from settings
-  let presettingsobj = await readSettings({nldates: {}})
+  let presettingsobj = await system.getSpaceConfig("nldates")
   let settingsobj = presettingsobj["nldates"]
   if (Object.keys(settingsobj).length == 0) { // no settings obj
     await syscall("editor.flashNotification", "Change prefix in SETTINGS")

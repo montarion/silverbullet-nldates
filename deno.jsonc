@@ -1,9 +1,9 @@
 {
   "importMap": "import_map.json",
   "tasks": {
-    "build": "silverbullet plug:compile --importmap import_map.json *.plug.yaml",
-    "publish": "silverbullet plug:compile --importmap import_map.json *.plug.yaml && git add *.plug.js",
-    "test": "silverbullet plug:compile --importmap import_map.json *.plug.yaml && cp *.plug.js /home/$USER/notes/_plug/"
+    "build": "silverbullet plug:compile *.plug.yaml",
+    "publish": "silverbullet plug:compile *.plug.yaml && git add *.plug.js",
+    "test": "silverbullet plug:compile *.plug.yaml && cp *.plug.js /home/$USER/notes/_plug/"
     
   },
   "lint": {
@@ -17,5 +17,10 @@
       "**/*.md",
       "*.plug.js"
     ]
+  },
+  "imports": {
+    "@silverbulletmd/silverbullet": "jsr:@silverbulletmd/silverbullet@^0.10.4/",
+    "chrono-node": "npm:chrono-node@^2.7.5",
+    "$sb/": "https://deno.land/x/silverbullet/plug-api/"
   }
 }
